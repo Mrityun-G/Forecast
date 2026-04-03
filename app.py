@@ -8,7 +8,7 @@ app = Flask(__name__)
 # 🔑 ADD YOUR KEYS HERE
 WAQI_KEY = "8ca016d57877de6c7950b68762a4729bb941cdf5"
 WEATHER_KEY = "e29a04212ae44a3ce3c44f5d66f52524"
-AI_KEY = "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"
+AI_KEY = "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"
 
 # ---------------- HOME ----------------
 @app.route("/")
