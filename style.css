@@ -1,0 +1,31 @@
+body {
+  font-family: Arial;
+  background: #f5f7fb;
+  text-align: center;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.left { flex: 3; }
+.right { flex: 1; }
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+#map {
+  height: 300px;
+  margin-top: 20px;
+}
+
+.good { color: green; }
+.moderate { color: orange; }
+.poor { color: red; }

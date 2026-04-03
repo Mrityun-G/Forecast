@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Air Quality Dashboard</title>
+
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<h1>🌍 Air Quality Dashboard</h1>
+
+<div class="controls">
+  <select id="city1"></select>
+  <select id="city2"></select>
+  <button onclick="loadData()">Compare</button>
+</div>
+
+<div class="layout">
+
+  <div class="left">
+    <canvas id="chart"></canvas>
+    <div id="map"></div>
+  </div>
+
+  <div class="right">
+
+    <div class="card">
+      <h3 id="city1Name">City 1</h3>
+      <p>NO₂: <span id="no2_1">--</span></p>
+      <p>O₃: <span id="o3_1">--</span></p>
+      <p>🌡 Temp: <span id="temp_1">--</span></p>
+      <p>🌬 Wind: <span id="wind_1">--</span></p>
+    </div>
+
+    <div class="card">
+      <h3 id="city2Name">City 2</h3>
+      <p>NO₂: <span id="no2_2">--</span></p>
+      <p>O₃: <span id="o3_2">--</span></p>
+      <p>🌡 Temp: <span id="temp_2">--</span></p>
+      <p>🌬 Wind: <span id="wind_2">--</span></p>
+    </div>
+
+    <div class="card">
+      <h3>🌍 Air Quality Status</h3>
+      <p id="status">--</p>
+    </div>
+
+    <div class="card">
+      <h3>🤖 AI Insight</h3>
+      <p id="insight">Click compare...</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="/script.js"></script>
+
+</body>
+</html>
